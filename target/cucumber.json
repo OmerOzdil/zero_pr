@@ -1,0 +1,121 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-17T19:38:03.715Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6079315000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "the fill out message appeared",
+        "description": "",
+        "id": "pay-bills-module;the-fill-out-message-appeared",
+        "after": [
+          {
+            "result": {
+              "duration": 735651000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 867624700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The user is on the login page",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1383017400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "The user logged in with \"username\" \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.zerobank.step_definitions.LoginStepDefs.the_user_logged_in_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 816763000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The user navigates to \"Pay Bills\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Pay Bills\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.zerobank.step_definitions.AccoountSummaryPageDefs.the_user_navigates_to(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 329276800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "The message \"Please fill in this field\" pop up",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please fill in this field\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.zerobank.step_definitions.payBillsStepDefs.the_message_pop_up(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Pay Bills module",
+    "description": "",
+    "id": "pay-bills-module",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/PayBills.feature",
+    "tags": []
+  }
+]
