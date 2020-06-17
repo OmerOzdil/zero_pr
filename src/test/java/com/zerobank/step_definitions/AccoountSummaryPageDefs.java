@@ -20,6 +20,8 @@ public class AccoountSummaryPageDefs {
 
         String actualTitle= Driver.get().getTitle();
         Assert.assertEquals(expectedTitle,actualTitle);
+
+        System.out.println("update");
     }
 
     @Then("the page should contains the followings")
