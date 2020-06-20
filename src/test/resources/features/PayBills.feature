@@ -12,7 +12,7 @@ Feature: Pay Bills module
     When The user logged in with "username" "password"
     And The user navigates to "Pay Bills"
     And The user enter amount, put a date,press the pay button and "The payment was successfully submitted."
-  @wip
+
   Scenario: the fill out message appeared
     Given The user is on the login page
     When The user logged in with "username" "password"

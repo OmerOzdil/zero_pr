@@ -19,6 +19,9 @@ public class LoginStepDefs {
 
     @When("The user logged in with {string} {string}")
     public void the_user_logged_in_with(String username, String password) {
+        String url= ConfigurationReader.get("url");
+        Driver.get().get(url);
+        BrowserUtils.waitForVisibility(new LoginPage().userNameInput,5);
         new LoginPage().login(username,password);
 
     }

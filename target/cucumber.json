@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-17T19:38:03.715Z",
+        "start_timestamp": "2020-06-20T12:36:49.149Z",
         "before": [
           {
             "result": {
-              "duration": 6079315000,
+              "duration": 6588650400,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 16,
-        "name": "the fill out message appeared",
+        "line": 28,
+        "name": "Loan Account redirect",
         "description": "",
-        "id": "pay-bills-module;the-fill-out-message-appeared",
+        "id": "navigating-to-specific-accounts-in-account-activity;loan-account-redirect",
         "after": [
           {
             "result": {
-              "duration": 735651000,
+              "duration": 718101200,
               "status": "passed"
             },
             "match": {
@@ -35,22 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 867624700,
+              "duration": 2421943100,
               "status": "passed"
             },
-            "line": 17,
-            "name": "The user is on the login page",
-            "match": {
-              "location": "com.zerobank.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1383017400,
-              "status": "passed"
-            },
-            "line": 18,
+            "line": 29,
             "name": "The user logged in with \"username\" \"password\"",
             "match": {
               "arguments": [
@@ -65,43 +53,61 @@
               ],
               "location": "com.zerobank.step_definitions.LoginStepDefs.the_user_logged_in_with(java.lang.String,java.lang.String)"
             },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 739660900,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the user clicks on \"Loan\" link on the Account Summary Page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Loan\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.zerobank.step_definitions.AccoountSummaryPageDefs.the_user_clicks_on_link_on_the_Account_Summary_Page(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 816763000,
+              "duration": 13979700,
               "status": "passed"
             },
-            "line": 19,
-            "name": "The user navigates to \"Pay Bills\"",
+            "line": 31,
+            "name": "The page should the title \"Zero - Account Activity\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Pay Bills\"",
-                  "offset": 22
+                  "val": "\"Zero - Account Activity\"",
+                  "offset": 26
                 }
               ],
-              "location": "com.zerobank.step_definitions.AccoountSummaryPageDefs.the_user_navigates_to(java.lang.String)"
+              "location": "com.zerobank.step_definitions.AccoountSummaryPageDefs.The_page_should_the_title(java.lang.String)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 329276800,
+              "duration": 534409200,
               "status": "passed"
             },
-            "line": 20,
-            "name": "The message \"Please fill in this field\" pop up",
+            "line": 32,
+            "name": "Account drop down should have \"Loan\" selected",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Please fill in this field\"",
-                  "offset": 12
+                  "val": "\"Loan\"",
+                  "offset": 30
                 }
               ],
-              "location": "com.zerobank.step_definitions.payBillsStepDefs.the_message_pop_up(java.lang.String)"
+              "location": "com.zerobank.step_definitions.AccountActivityPageDefs.account_drop_down_should_have_selected(java.lang.String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -111,11 +117,11 @@
         ]
       }
     ],
-    "name": "Pay Bills module",
+    "name": "Navigating to specific accounts in Account Activity",
     "description": "",
-    "id": "pay-bills-module",
+    "id": "navigating-to-specific-accounts-in-account-activity",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/PayBills.feature",
+    "uri": "file:src/test/resources/features/AccountActivityNavigation.feature",
     "tags": []
   }
 ]

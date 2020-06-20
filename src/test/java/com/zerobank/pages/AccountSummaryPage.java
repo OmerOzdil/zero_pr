@@ -21,6 +21,21 @@ public class AccountSummaryPage {
     @FindBy(xpath = "//div[@class='board'][3]//table//thead//th")
     public List<WebElement> CreditAccountColoums;
 
+    @FindBy(xpath = "(//a[text()='Savings'])[1]")
+    public WebElement savingsButton;
+
+    @FindBy(xpath = "//a[text()='Brokerage']")
+    public WebElement brokerageButton;
+
+
+    public void clickOn(String string){
+        String el="//a[text()='"+string+"']";
+        WebElement element=Driver.get().findElement(By.xpath(el));
+        element.click();
+
+
+    }
+
 
     public void navigateToTab(String tabName){
         String tab = "//li/a[contains(text(),'"+tabName+"')]";
@@ -29,7 +44,6 @@ public class AccountSummaryPage {
 
     public List<String> getColoums(){
         List<String> Coloums = new ArrayList<>();
-
         for (WebElement creditAccountColoum : CreditAccountColoums) {
             Coloums.add(creditAccountColoum.getText());
         }

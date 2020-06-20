@@ -79,8 +79,9 @@ public class AccoountSummaryPageDefs {
         Assert.assertEquals(expectedtableColoums,new AccountActivityPage().getTransactionColoums());
     }
 
-
-
-
+    @When("the user clicks on {string} link on the Account Summary Page")
+    public void the_user_clicks_on_link_on_the_Account_Summary_Page(String string) {
+        new AccountSummaryPage().clickOn(string);
+    }
 
     }
