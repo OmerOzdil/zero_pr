@@ -40,6 +40,7 @@ public class AccoountSummaryPageDefs {
     public void the_user_navigates_to(String tabName) {
         AccountSummaryPage accountSummaryPage = new AccountSummaryPage();
         accountSummaryPage.navigateToTab(tabName);
+        BrowserUtils.waitFor(1);
     }
     @Then("The user should the default option as {string}")
     public void the_user_should_the_default_option_as(String string) {

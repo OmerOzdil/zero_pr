@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-20T12:36:49.149Z",
+        "start_timestamp": "2020-06-23T14:03:15.400Z",
         "before": [
           {
             "result": {
-              "duration": 6588650400,
+              "duration": 6054765700,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 28,
-        "name": "Loan Account redirect",
+        "line": 4,
+        "name": "Search date Range",
         "description": "",
-        "id": "navigating-to-specific-accounts-in-account-activity;loan-account-redirect",
+        "id": "find-transactions-in-account-activity;search-date-range",
         "after": [
           {
             "result": {
-              "duration": 718101200,
+              "duration": 661497700,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2421943100,
+              "duration": 13044196700,
               "status": "passed"
             },
-            "line": 29,
+            "line": 5,
             "name": "The user logged in with \"username\" \"password\"",
             "match": {
               "arguments": [
@@ -57,55 +57,59 @@
           },
           {
             "result": {
-              "duration": 739660900,
+              "duration": 1994050700,
               "status": "passed"
             },
-            "line": 30,
-            "name": "the user clicks on \"Loan\" link on the Account Summary Page",
+            "line": 6,
+            "name": "The user navigates to \"Account Activity\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Loan\"",
-                  "offset": 19
+                  "val": "\"Account Activity\"",
+                  "offset": 22
                 }
               ],
-              "location": "com.zerobank.step_definitions.AccoountSummaryPageDefs.the_user_clicks_on_link_on_the_Account_Summary_Page(java.lang.String)"
+              "location": "com.zerobank.step_definitions.AccoountSummaryPageDefs.the_user_navigates_to(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 13979700,
+              "duration": 106498600,
               "status": "passed"
             },
-            "line": 31,
-            "name": "The page should the title \"Zero - Account Activity\"",
+            "line": 7,
+            "name": "the user click on \"Find Transactions\" tab",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Zero - Account Activity\"",
-                  "offset": 26
+                  "val": "\"Find Transactions\"",
+                  "offset": 18
                 }
               ],
-              "location": "com.zerobank.step_definitions.AccoountSummaryPageDefs.The_page_should_the_title(java.lang.String)"
+              "location": "com.zerobank.step_definitions.AccountActivityPageDefs.the_user_click_on_tab(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 534409200,
+              "duration": 1286896400,
               "status": "passed"
             },
-            "line": 32,
-            "name": "Account drop down should have \"Loan\" selected",
+            "line": 8,
+            "name": "the user enters date range from \"1\" to \"2\" and click search",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Loan\"",
-                  "offset": 30
+                  "val": "\"1\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"2\"",
+                  "offset": 39
                 }
               ],
-              "location": "com.zerobank.step_definitions.AccountActivityPageDefs.account_drop_down_should_have_selected(java.lang.String)"
+              "location": "com.zerobank.step_definitions.AccountActivityPageDefs.the_user_enters_date_range_from_to_and_click_search(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -117,11 +121,11 @@
         ]
       }
     ],
-    "name": "Navigating to specific accounts in Account Activity",
+    "name": "Find Transactions in Account Activity",
     "description": "",
-    "id": "navigating-to-specific-accounts-in-account-activity",
+    "id": "find-transactions-in-account-activity",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/AccountActivityNavigation.feature",
+    "uri": "file:src/test/resources/features/FindTransactions.feature",
     "tags": []
   }
 ]
